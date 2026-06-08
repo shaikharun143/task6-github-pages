@@ -53,8 +53,8 @@ task6-github-pages/
 ├── index.html
 ├── style.css
 ├── script.js
-├── README.md
-└── screenshots/
+├── README.md/
+
 ```
 
 ---
@@ -91,6 +91,9 @@ style.css
 script.js
 ```
 
+<img width="719" height="593" alt="image" src="https://github.com/user-attachments/assets/dc09e170-1ecd-4f09-889f-f76b61ffa784" />
+
+
 Implemented the portfolio website structure and styling.
 
 ---
@@ -126,6 +129,8 @@ git remote add origin https://github.com/shaikharun143/task6-github-pages.git
 ```
 
 ---
+<img width="673" height="558" alt="image" src="https://github.com/user-attachments/assets/f06bd72a-b96a-433c-b187-0b7cdcd68561" />
+
 
 ### Step 8: Push Code to GitHub
 
@@ -133,6 +138,8 @@ git remote add origin https://github.com/shaikharun143/task6-github-pages.git
 git branch -M main
 git push -u origin main
 ```
+
+<img width="590" height="215" alt="image" src="https://github.com/user-attachments/assets/b5429da8-9ea6-442f-b07e-2913b9ecdb7b" />
 
 ---
 
@@ -155,6 +162,12 @@ After saving, GitHub automatically generated a public URL for the website.
 Website URL:
 
 https://shaikharun143.github.io/task6-github-pages/#hero
+
+<img width="1280" height="771" alt="image" src="https://github.com/user-attachments/assets/3514e8e5-46c0-449a-a4a2-5257a9be4728" />
+
+
+<img width="1280" height="703" alt="image" src="https://github.com/user-attachments/assets/44935b76-d90d-4124-a81f-b9d83ddf2a0b" />
+
 
 ---
 
