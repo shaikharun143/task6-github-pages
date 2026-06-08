@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaik Harun Yahya — DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Shaik Harun Yahya — DevOps Engineer specializing in AWS, Kubernetes, CI/CD and Infrastructure as Code." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background layers -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand" data-cursor>
+      <span class="nav__prompt">~/</span>harun<span class="nav__blink">_</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-cursor>about</a>
+      <a href="#skills" data-cursor>stack</a>
+      <a href="#projects" data-cursor>projects</a>
+      <a href="#education" data-cursor>journey</a>
+      <a href="#contact" class="nav__cta" data-cursor>contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__left reveal">
+          <p class="hero__eyebrow"><span class="dot"></span> Available immediately · Dubai, UAE</p>
+          <h1 class="hero__title">
+            <span class="line">SHAIK</span>
+            <span class="line">HARUN <span class="accent">YAHYA</span></span>
+          </h1>
+          <p class="hero__role">DevOps Engineer</p>
+          <p class="hero__sub">
+            I design CI/CD pipelines, automate infrastructure as code, and run
+            production-grade workloads on <strong>AWS</strong> — built for
+            reliability, observability and scale.
+          </p>
+          <div class="hero__tags">
+            <span>AWS</span><span>Kubernetes</span><span>Jenkins</span>
+            <span>Terraform</span><span>Docker</span>
+          </div>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary" data-cursor>View Projects</a>
+            <a href="#contact" class="btn btn--ghost" data-cursor>Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Terminal -->
+        <div class="hero__right reveal">
+          <div class="terminal" id="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__btn red"></span>
+              <span class="terminal__btn yellow"></span>
+              <span class="terminal__btn green"></span>
+              <span class="terminal__title">bash — deploy.sh</span>
+            </div>
+            <div class="terminal__body" id="terminalBody"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- stats -->
+      <div class="hero__stats reveal">
+        <div class="stat"><span class="stat__num" data-target="15">0</span><span class="stat__label">stage pipeline</span></div>
+        <div class="stat"><span class="stat__num" data-target="3">0</span><span class="stat__label">cloud projects</span></div>
+        <div class="stat"><span class="stat__num" data-target="13">0</span><span class="stat__label">AWS services</span></div>
+        <div class="stat"><span class="stat__num" data-target="2026">0</span><span class="stat__label">CS graduate</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">// about</h2>
+      </div>
+      <div class="about__grid">
+        <p class="about__lead reveal">
+          Computer Science graduate <span class="hl">(2026)</span> and DevOps engineer
+          with hands-on experience designing CI/CD pipelines, automating infrastructure,
+          and operating production-grade workloads on AWS.
+        </p>
+        <p class="about__body reveal">
+          I've built a <span class="hl">15-stage Jenkins pipeline</span> deploying to
+          Kubernetes, automated provisioning with Terraform and Ansible, and implemented
+          full observability with Prometheus and Grafana. I care about reliability,
+          automation and clean cloud security — and I'm based in the UAE, available to
+          contribute from week one.
+        </p>
+        <div class="about__meta reveal">
+          <div class="meta-row"><span>Location</span><b>Dubai, UAE</b></div>
+          <div class="meta-row"><span>Status</span><b>Visit Visa · Available now</b></div>
+          <div class="meta-row"><span>Languages</span><b>English · Hindi · Urdu · Telugu</b></div>
+          <div class="meta-row"><span>Focus</span><b>Cloud · Automation · SRE</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">// tech stack</h2>
+      </div>
+      <div class="skills__grid" id="skillsGrid">
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot"></span>Cloud — AWS</h3>
+          <ul class="tag-list">
+            <li>EC2</li><li>S3</li><li>IAM</li><li>VPC</li><li>Route 53</li><li>CloudFront</li>
+            <li>CloudWatch</li><li>Lambda</li><li>RDS</li><li>Aurora</li><li>EFS</li>
+            <li>Auto Scaling</li><li>ALB</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot"></span>CI/CD &amp; IaC</h3>
+          <ul class="tag-list">
+            <li>Jenkins</li><li>GitHub Actions</li><li>Maven</li><li>Terraform</li>
+            <li>Ansible</li><li>CloudFormation</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot"></span>Containers &amp; Orchestration</h3>
+          <ul class="tag-list">
+            <li>Docker</li><li>Kubernetes</li><li>Minikube</li><li>kubectl</li>
+            <li>Deployments</li><li>Services</li><li>Scaling</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot"></span>Observability</h3>
+          <ul class="tag-list">
+            <li>Prometheus</li><li>Grafana</li><li>CloudWatch</li>
+            <li>Node Exporter</li><li>Blackbox Exporter</li><li>ELK</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot"></span>Security &amp; Quality</h3>
+          <ul class="tag-list">
+            <li>IAM Hardening</li><li>Secrets Manager</li><li>SonarQube</li>
+            <li>Aqua Trivy</li><li>KubeAudit</li><li>OAC</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot"></span>Scripting · OS · Network</h3>
+          <ul class="tag-list">
+            <li>Python</li><li>Bash / Shell</li><li>Git / GitHub</li><li>Linux (Ubuntu)</li>
+            <li>DNS</li><li>Load Balancing</li><li>Firewalls</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">// projects</h2>
+      </div>
+
+      <!-- Project 1 with pipeline viz -->
+      <article class="project reveal">
+        <div class="project__top">
+          <div>
+            <span class="project__year">2026</span>
+            <h3 class="project__name">End-to-End CI/CD Pipeline on Kubernetes</h3>
+          </div>
+          <span class="project__badge">Jenkins · K8s · AWS</span>
+        </div>
+        <p class="project__desc">
+          A 15-stage Jenkins declarative pipeline covering Maven build/test, SonarQube
+          quality gate, Trivy vulnerability scanning, Nexus artifact storage, Docker
+          image publishing and Kubernetes deployment on AWS EC2 — with full observability
+          via Prometheus &amp; Grafana and automated email scan reports.
+        </p>
+        <div class="pipeline" id="pipeline">
+          <div class="pipeline__stage" data-stage="1"><span>Build</span></div>
+          <div class="pipeline__stage" data-stage="2"><span>Test</span></div>
+          <div class="pipeline__stage" data-stage="3"><span>SonarQube</span></div>
+          <div class="pipeline__stage" data-stage="4"><span>Trivy</span></div>
+          <div class="pipeline__stage" data-stage="5"><span>Nexus</span></div>
+          <div class="pipeline__stage" data-stage="6"><span>Docker</span></div>
+          <div class="pipeline__stage" data-stage="7"><span>KubeAudit</span></div>
+          <div class="pipeline__stage" data-stage="8"><span>Deploy K8s</span></div>
+          <div class="pipeline__stage" data-stage="9"><span>Monitor</span></div>
+        </div>
+        <ul class="project__tags">
+          <li>SonarQube</li><li>Aqua Trivy</li><li>KubeAudit</li><li>Prometheus</li>
+          <li>Grafana</li><li>Node Exporter</li><li>Blackbox Exporter</li>
+        </ul>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project reveal">
+        <div class="project__top">
+          <div>
+            <span class="project__year">2026</span>
+            <h3 class="project__name">Scalable Web App Deployment on AWS</h3>
+          </div>
+          <span class="project__badge">EC2 · ALB · Auto Scaling</span>
+        </div>
+        <p class="project__desc">
+          Deployed a dynamic web application on Amazon EC2 behind an Application Load
+          Balancer with an Auto Scaling Group — high availability across two availability
+          zones under variable traffic, with CloudWatch dashboards for CPU, throughput and
+          latency, and zero-downtime deployments via launch templates &amp; health checks.
+        </p>
+        <ul class="project__tags">
+          <li>EC2</li><li>ALB</li><li>Auto Scaling</li><li>Multi-AZ</li>
+          <li>CloudWatch</li><li>Launch Templates</li>
+        </ul>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project reveal">
+        <div class="project__top">
+          <div>
+            <span class="project__year">2026</span>
+            <h3 class="project__name">Static Site Hosting — CloudNova</h3>
+          </div>
+          <span class="project__badge">S3 · CloudFront · OAC</span>
+        </div>
+        <p class="project__desc">
+          Hosted a production static website on Amazon S3 with versioning and lifecycle
+          rules transitioning older versions to S3-IA for cost. Fronted by CloudFront with
+          edge caching and HTTPS enforcement, with S3 access locked down via IAM bucket
+          policies and Origin Access Control so traffic flows only through the CDN.
+        </p>
+        <ul class="project__tags">
+          <li>S3</li><li>Versioning</li><li>Lifecycle Rules</li><li>CloudFront</li>
+          <li>HTTPS</li><li>OAC</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- EDUCATION / JOURNEY -->
+    <section class="section journey" id="education">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">// journey</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2022 — 2026</span>
+          <h3>B.Tech, Computer Science Engineering</h3>
+          <p>Jawaharlal Nehru Technological University, Hyderabad</p>
+          <span class="tl-meta">CGPA 8.10 / 10</span>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2020 — 2022</span>
+          <h3>Intermediate — MPC (Maths, Physics, Chemistry)</h3>
+          <p>Hyderabad Institute of Excellence, Vikarabad</p>
+          <span class="tl-meta">Score 88.2%</span>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2020</span>
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p>Abhyas High School, Hyderabad</p>
+          <span class="tl-meta">CGPA 9.5 / 10</span>
+        </div>
+      </div>
+
+      <div class="certs reveal">
+        <h3 class="certs__title">Certifications</h3>
+        <ul class="certs__list">
+          <li><span class="certs__tag">2023</span> AWS Educate — Compute &amp; Storage · <em>Amazon Web Services</em></li>
+          <li><span class="certs__tag">2023</span> Programming Foundations with Python · <em>NxtWave</em></li>
+          <li><span class="certs__tag">2024</span> Database Foundations · <em>NxtWave</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner reveal">
+        <span class="section__index">05</span>
+        <h2 class="contact__title">Let's build something<br /><span class="accent">reliable.</span></h2>
+        <p class="contact__sub">Open to DevOps / Cloud / SRE roles. Based in Dubai, available immediately.</p>
+        <div class="contact__links">
+          <a href="mailto:harun.cloudops@gmail.com" data-cursor>
+            <span class="contact__k">email</span>harun.cloudops@gmail.com
+          </a>
+          <a href="tel:+971501017218" data-cursor>
+            <span class="contact__k">phone</span>+971 50 101 7218
+          </a>
+          <a href="https://linkedin.com/in/shaik-harun" target="_blank" rel="noopener" data-cursor>
+            <span class="contact__k">linkedin</span>/in/shaik-harun
+          </a>
+          <a href="https://github.com/shaikharun143" target="_blank" rel="noopener" data-cursor>
+            <span class="contact__k">github</span>/shaikharun143
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Shaik Harun Yahya</span>
+    <span class="footer__build">build: <b>passing</b> <i class="footer__pulse"></i></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
